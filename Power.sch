@@ -1,0 +1,279 @@
+EESchema Schematic File Version 4
+LIBS:Atari 130XE-cache
+EELAYER 29 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 14
+Title "Power"
+Date "2020-02-17"
+Rev "1.1"
+Comp "Jacek Binkul"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:DIN-7 J1
+U 1 1 5E50DB30
+P 3250 3450
+F 0 "J1" H 3250 3083 50  0000 C CNN
+F 1 "Power" H 3250 3174 50  0000 C CNN
+F 2 "Atari:DIN_7_pin" H 3250 3450 50  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/18/40_c091_abd_e-75918.pdf" H 3250 3450 50  0001 C CNN
+	1    3250 3450
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	3250 3750 2950 3750
+Wire Wire Line
+	2950 3750 2950 3550
+Wire Wire Line
+	2950 3550 2950 3450
+Connection ~ 2950 3550
+Wire Wire Line
+	2950 3450 2950 3350
+Connection ~ 2950 3450
+Wire Wire Line
+	3550 3550 3550 3450
+Wire Wire Line
+	3550 3450 3550 3350
+Connection ~ 3550 3450
+$Comp
+L Atari:Switch_power_on SW1
+U 1 1 5E510EE2
+P 4600 3450
+F 0 "SW1" H 4600 3765 50  0000 C CNN
+F 1 "Switch_power_on" H 4600 3674 50  0000 C CNN
+F 2 "Atari:Switch_ON-OFF" H 4600 3450 50  0001 C CNN
+F 3 "" H 4600 3450 50  0001 C CNN
+	1    4600 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 3450 4200 3450
+$Comp
+L Device:CP C4
+U 1 1 5E5126E9
+P 5400 3750
+F 0 "C4" H 5518 3796 50  0000 L CNN
+F 1 "470uF" H 5518 3705 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 5438 3600 50  0001 C CNN
+F 3 "~" H 5400 3750 50  0001 C CNN
+	1    5400 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C5
+U 1 1 5E5136B6
+P 5850 3750
+F 0 "C5" H 5965 3796 50  0000 L CNN
+F 1 "100nF" H 5965 3705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 5888 3600 50  0001 C CNN
+F 3 "~" H 5850 3750 50  0001 C CNN
+	1    5850 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3250 3750 3250 4000
+Connection ~ 3250 3750
+$Comp
+L Device:CP C6
+U 1 1 5E514F88
+P 6500 3750
+F 0 "C6" H 6618 3796 50  0000 L CNN
+F 1 "22uF" H 6618 3705 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D5.0mm_P2.00mm" H 6538 3600 50  0001 C CNN
+F 3 "~" H 6500 3750 50  0001 C CNN
+	1    6500 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C7
+U 1 1 5E5154B1
+P 7000 3750
+F 0 "C7" H 7115 3796 50  0000 L CNN
+F 1 "100nF" H 7115 3705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 7038 3600 50  0001 C CNN
+F 3 "~" H 7000 3750 50  0001 C CNN
+	1    7000 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3450 7000 3600
+Wire Wire Line
+	5000 3450 5400 3450
+Wire Wire Line
+	7000 4000 7000 3900
+Wire Wire Line
+	3250 4000 5400 4000
+Wire Wire Line
+	6500 3600 6500 3450
+Wire Wire Line
+	6500 3450 7000 3450
+Wire Wire Line
+	5850 3600 5850 3450
+Wire Wire Line
+	5400 3600 5400 3450
+Connection ~ 5400 3450
+Wire Wire Line
+	5400 3450 5850 3450
+Wire Wire Line
+	5400 3900 5400 4000
+Connection ~ 5400 4000
+Wire Wire Line
+	5400 4000 5850 4000
+Wire Wire Line
+	5850 3900 5850 4000
+Connection ~ 5850 4000
+Wire Wire Line
+	5850 4000 6500 4000
+Wire Wire Line
+	6500 3900 6500 4000
+Connection ~ 6500 4000
+Wire Wire Line
+	6500 4000 7000 4000
+$Comp
+L Device:Ferrite_Bead FB1
+U 1 1 5E5179C0
+P 6200 3450
+F 0 "FB1" V 5926 3450 50  0000 C CNN
+F 1 "Ferrite_Bead" V 6017 3450 50  0000 C CNN
+F 2 "Inductor_THT:L_Axial_L9.5mm_D4.0mm_P12.70mm_Horizontal_Fastron_SMCC" V 6130 3450 50  0001 C CNN
+F 3 "~" H 6200 3450 50  0001 C CNN
+	1    6200 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6050 3450 5850 3450
+Connection ~ 5850 3450
+Wire Wire Line
+	6350 3450 6500 3450
+Connection ~ 6500 3450
+$Comp
+L power:+5VA #PWR0113
+U 1 1 5E519AAF
+P 7000 3150
+F 0 "#PWR0113" H 7000 3000 50  0001 C CNN
+F 1 "+5VA" H 7015 3323 50  0000 C CNN
+F 2 "" H 7000 3150 50  0001 C CNN
+F 3 "" H 7000 3150 50  0001 C CNN
+	1    7000 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VCC #PWR0114
+U 1 1 5E51A2C3
+P 5400 2800
+F 0 "#PWR0114" H 5400 2650 50  0001 C CNN
+F 1 "VCC" H 5417 2973 50  0000 C CNN
+F 2 "" H 5400 2800 50  0001 C CNN
+F 3 "" H 5400 2800 50  0001 C CNN
+	1    5400 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3150 7000 3450
+Connection ~ 7000 3450
+$Comp
+L power:GND #PWR0115
+U 1 1 5E51B5B3
+P 5400 4300
+F 0 "#PWR0115" H 5400 4050 50  0001 C CNN
+F 1 "GND" H 5405 4127 50  0000 C CNN
+F 2 "" H 5400 4300 50  0001 C CNN
+F 3 "" H 5400 4300 50  0001 C CNN
+	1    5400 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 4300 5400 4000
+$Comp
+L power:PWR_FLAG #FLG0101
+U 1 1 5E522285
+P 4300 6600
+F 0 "#FLG0101" H 4300 6675 50  0001 C CNN
+F 1 "PWR_FLAG" H 4300 6773 50  0000 C CNN
+F 2 "" H 4300 6600 50  0001 C CNN
+F 3 "~" H 4300 6600 50  0001 C CNN
+	1    4300 6600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:VCC #PWR0116
+U 1 1 5E522F01
+P 4300 6250
+F 0 "#PWR0116" H 4300 6100 50  0001 C CNN
+F 1 "VCC" H 4317 6423 50  0000 C CNN
+F 2 "" H 4300 6250 50  0001 C CNN
+F 3 "" H 4300 6250 50  0001 C CNN
+	1    4300 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 6250 4300 6600
+$Comp
+L power:PWR_FLAG #FLG0102
+U 1 1 5E5238C2
+P 5050 6250
+F 0 "#FLG0102" H 5050 6325 50  0001 C CNN
+F 1 "PWR_FLAG" H 5050 6423 50  0000 C CNN
+F 2 "" H 5050 6250 50  0001 C CNN
+F 3 "~" H 5050 6250 50  0001 C CNN
+	1    5050 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 5E52416D
+P 5050 6650
+F 0 "#PWR0117" H 5050 6400 50  0001 C CNN
+F 1 "GND" H 5055 6477 50  0000 C CNN
+F 2 "" H 5050 6650 50  0001 C CNN
+F 3 "" H 5050 6650 50  0001 C CNN
+	1    5050 6650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5050 6250 5050 6650
+$Comp
+L Device:Ferrite_Bead FB2
+U 1 1 5E5252DB
+P 5400 3150
+F 0 "FB2" H 5263 3104 50  0000 R CNN
+F 1 "Ferrite_Bead" H 5263 3195 50  0000 R CNN
+F 2 "Inductor_THT:L_Axial_L9.5mm_D4.0mm_P12.70mm_Horizontal_Fastron_SMCC" V 5330 3150 50  0001 C CNN
+F 3 "~" H 5400 3150 50  0001 C CNN
+	1    5400 3150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5400 3000 5400 2800
+Wire Wire Line
+	5400 3300 5400 3450
+$Comp
+L power:+5VA #PWR0150
+U 1 1 5E947C7F
+P 5750 6250
+F 0 "#PWR0150" H 5750 6100 50  0001 C CNN
+F 1 "+5VA" H 5765 6423 50  0000 C CNN
+F 2 "" H 5750 6250 50  0001 C CNN
+F 3 "" H 5750 6250 50  0001 C CNN
+	1    5750 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG0103
+U 1 1 5E9487C2
+P 5750 6600
+F 0 "#FLG0103" H 5750 6675 50  0001 C CNN
+F 1 "PWR_FLAG" H 5750 6773 50  0000 C CNN
+F 2 "" H 5750 6600 50  0001 C CNN
+F 3 "~" H 5750 6600 50  0001 C CNN
+	1    5750 6600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5750 6250 5750 6600
+$EndSCHEMATC
