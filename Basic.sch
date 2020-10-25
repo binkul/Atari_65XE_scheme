@@ -575,7 +575,7 @@ CCTL
 Wire Wire Line
 	1300 3200 1300 3300
 Text GLabel 1100 3300 0    50   Input ~ 0
-O2
+BO2
 Wire Wire Line
 	1100 3300 1300 3300
 Connection ~ 1300 3300

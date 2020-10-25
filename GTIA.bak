@@ -506,10 +506,6 @@ F 3 "" H 3650 9500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3650 9650 3650 9550
-Wire Wire Line
-	3650 10450 3650 10550
-Wire Wire Line
 	1775 9875 2100 9875
 Wire Wire Line
 	1775 10175 2100 10175
@@ -1069,12 +1065,6 @@ F 3 "http://www.intersil.com/content/dam/intersil/documents/cd40/cd4050bms.pdf" 
 	7    5125 1900
 	1    0    0    -1  
 $EndComp
-Connection ~ 3650 9550
-Wire Wire Line
-	3650 9550 3650 9500
-Connection ~ 3650 10550
-Wire Wire Line
-	3650 10550 3650 10600
 $Comp
 L Device:R R42
 U 1 1 5E5FF5BC
@@ -1726,295 +1716,14 @@ COMPOSITE
 Wire Wire Line
 	12825 4525 13250 4525
 Connection ~ 12825 4525
-$Comp
-L 74xx:74HC14 U57
-U 1 1 5E6920AB
-P 13750 6025
-F 0 "U57" H 13750 6342 50  0000 C CNN
-F 1 "74HC14" H 13750 6251 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 13750 6025 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 13750 6025 50  0001 C CNN
-	1    13750 6025
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74HC14 U57
-U 2 1 5E69410A
-P 15025 6025
-F 0 "U57" H 15025 6342 50  0000 C CNN
-F 1 "74HC14" H 15025 6251 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 15025 6025 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 15025 6025 50  0001 C CNN
-	2    15025 6025
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D50
-U 1 1 5E695FD1
-P 14400 6025
-F 0 "D50" H 14400 5809 50  0000 C CNN
-F 1 "BAS316" H 14400 5900 50  0000 C CNN
-F 2 "Atari:D_SOD-323_HandSoldering" H 14400 6025 50  0001 C CNN
-F 3 "~" H 14400 6025 50  0001 C CNN
-	1    14400 6025
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	14050 6025 14250 6025
-Wire Wire Line
-	14550 6025 14725 6025
-$Comp
-L Device:R R206
-U 1 1 5E6AF5F0
-P 14400 5675
-F 0 "R206" H 14470 5721 50  0000 L CNN
-F 1 "1k" H 14470 5630 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 14330 5675 50  0001 C CNN
-F 3 "~" H 14400 5675 50  0001 C CNN
-	1    14400 5675
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	14250 5675 14050 5675
-Wire Wire Line
-	14050 5675 14050 6025
-Connection ~ 14050 6025
-Wire Wire Line
-	14725 5675 14725 6025
-Connection ~ 14725 6025
-Wire Wire Line
-	14550 5675 14725 5675
-$Comp
-L Device:C C250
-U 1 1 5E6D63DC
-P 14725 6475
-F 0 "C250" H 14610 6429 50  0000 R CNN
-F 1 "22pF" H 14610 6520 50  0000 R CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 14763 6325 50  0001 C CNN
-F 3 "~" H 14725 6475 50  0001 C CNN
-	1    14725 6475
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	14725 6025 14725 6325
-$Comp
-L power:GND #PWR0180
-U 1 1 5E6E3410
-P 14725 6800
-F 0 "#PWR0180" H 14725 6550 50  0001 C CNN
-F 1 "GND" H 14850 6700 50  0000 C CNN
-F 2 "" H 14725 6800 50  0001 C CNN
-F 3 "" H 14725 6800 50  0001 C CNN
-	1    14725 6800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14725 6625 14725 6800
-Text GLabel 13450 6025 0    50   Input ~ 0
-OSC
-$Comp
-L 74xx:74HC14 U57
-U 7 1 5E6F101A
-P 4425 10050
-F 0 "U57" H 4655 10096 50  0000 L CNN
-F 1 "74HC14" H 4655 10005 50  0000 L CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 4425 10050 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 4425 10050 50  0001 C CNN
-	7    4425 10050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3650 9550 4425 9550
-Wire Wire Line
-	3650 10550 4425 10550
-$Comp
-L 74xx:74HC14 U57
-U 3 1 5E72B25A
-P 11125 8800
-F 0 "U57" H 11125 9117 50  0000 C CNN
-F 1 "74HC14" H 11125 9026 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 11125 8800 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 11125 8800 50  0001 C CNN
-	3    11125 8800
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74HC14 U57
-U 4 1 5E72D44A
-P 11125 9250
-F 0 "U57" H 11125 9567 50  0000 C CNN
-F 1 "74HC14" H 11125 9476 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 11125 9250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 11125 9250 50  0001 C CNN
-	4    11125 9250
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74HC14 U57
-U 5 1 5E72EEE6
-P 11125 9750
-F 0 "U57" H 11125 10067 50  0000 C CNN
-F 1 "74HC14" H 11125 9976 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 11125 9750 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 11125 9750 50  0001 C CNN
-	5    11125 9750
-	1    0    0    -1  
-$EndComp
-$Comp
-L 74xx:74HC14 U57
-U 6 1 5E7303F9
-P 11125 10250
-F 0 "U57" H 11125 10567 50  0000 C CNN
-F 1 "74HC14" H 11125 10476 50  0000 C CNN
-F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 11125 10250 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74HC14" H 11125 10250 50  0001 C CNN
-	6    11125 10250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10825 8800 10825 9250
-Wire Wire Line
-	10825 9250 10825 9750
-Connection ~ 10825 9250
-Wire Wire Line
-	10825 9750 10825 10250
-Connection ~ 10825 9750
-$Comp
-L power:GND #PWR0181
-U 1 1 5E75BD3F
-P 10825 10500
-F 0 "#PWR0181" H 10825 10250 50  0001 C CNN
-F 1 "GND" H 10950 10400 50  0000 C CNN
-F 2 "" H 10825 10500 50  0001 C CNN
-F 3 "" H 10825 10500 50  0001 C CNN
-	1    10825 10500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10825 10250 10825 10500
-Connection ~ 10825 10250
-$Comp
-L 74xx:74LS175 U58
-U 1 1 5E77BA0A
-P 14525 8400
-F 0 "U58" H 14350 8975 50  0000 C CNN
-F 1 "74LS175" H 14725 8975 50  0000 C CNN
-F 2 "Package_SO:SOIC-16_3.9x9.9mm_P1.27mm" H 14525 8400 50  0001 C CNN
-F 3 "http://www.ti.com/lit/gpn/sn74LS175" H 14525 8400 50  0001 C CNN
-	1    14525 8400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0182
-U 1 1 5E77CF61
-P 14525 9350
-F 0 "#PWR0182" H 14525 9100 50  0001 C CNN
-F 1 "GND" H 14650 9250 50  0000 C CNN
-F 2 "" H 14525 9350 50  0001 C CNN
-F 3 "" H 14525 9350 50  0001 C CNN
-	1    14525 9350
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0183
-U 1 1 5E77D37C
-P 14525 7550
-F 0 "#PWR0183" H 14525 7400 50  0001 C CNN
-F 1 "VCC" H 14542 7723 50  0000 C CNN
-F 2 "" H 14525 7550 50  0001 C CNN
-F 3 "" H 14525 7550 50  0001 C CNN
-	1    14525 7550
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	14525 7550 14525 7700
-Wire Wire Line
-	14525 9350 14525 9200
-Text GLabel 14025 8000 0    50   Input ~ 0
-AN0
-Text GLabel 14025 8200 0    50   Input ~ 0
-AN1
-Text GLabel 14025 8400 0    50   Input ~ 0
-AN2
-Text GLabel 14025 8800 0    50   Input ~ 0
-OSC
-Wire Wire Line
-	14525 7700 13650 7700
-Wire Wire Line
-	13650 7700 13650 8600
-Wire Wire Line
-	13650 8900 14025 8900
-Connection ~ 14525 7700
-Wire Wire Line
-	14025 8600 13650 8600
-Connection ~ 13650 8600
-Wire Wire Line
-	13650 8600 13650 8900
 Text GLabel 3500 4050 0    50   Input ~ 0
-GTIA_AN0
-Text GLabel 3500 4150 0    50   Input ~ 0
-GTIA_AN1
-Text GLabel 3500 4250 0    50   Input ~ 0
-GTIA_AN2
-Text GLabel 4700 5100 2    50   Input ~ 0
-GTIA_OSC
-$Comp
-L Connector_Generic:Conn_02x08_Odd_Even J50
-U 1 1 5E5AA5B1
-P 12450 8850
-F 0 "J50" H 12500 9367 50  0000 C CNN
-F 1 "GTIA Fix" H 12500 9276 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 12450 8850 50  0001 C CNN
-F 3 "~" H 12450 8850 50  0001 C CNN
-	1    12450 8850
-	1    0    0    -1  
-$EndComp
-Text GLabel 12250 8550 0    50   Input ~ 0
 AN0
-Text GLabel 12250 8750 0    50   Input ~ 0
+Text GLabel 3500 4150 0    50   Input ~ 0
 AN1
-Text GLabel 12250 8950 0    50   Input ~ 0
+Text GLabel 3500 4250 0    50   Input ~ 0
 AN2
-Text GLabel 12750 9150 2    50   Input ~ 0
-GTIA_OSC
-Text GLabel 12750 8550 2    50   Input ~ 0
-GTIA_AN0
-Text GLabel 12750 8750 2    50   Input ~ 0
-GTIA_AN1
-Text GLabel 12750 8950 2    50   Input ~ 0
-GTIA_AN2
-Wire Wire Line
-	12750 8650 12750 8550
-Wire Wire Line
-	12750 8850 12750 8750
-Wire Wire Line
-	12750 9050 12750 8950
-Wire Wire Line
-	12750 9250 12750 9150
-Text GLabel 15025 8000 2    50   Input ~ 0
-AN0_FIX
-Text GLabel 15025 8200 2    50   Input ~ 0
-AN1_FIX
-Text GLabel 15025 8400 2    50   Input ~ 0
-AN2_FIX
-Text GLabel 15325 6025 2    50   Input ~ 0
-OSC_FIX
-Text GLabel 12250 9250 0    50   Input ~ 0
-OSC_FIX
-Text GLabel 12250 8650 0    50   Input ~ 0
-AN0_FIX
-Text GLabel 12250 8850 0    50   Input ~ 0
-AN1_FIX
-Text GLabel 12250 9050 0    50   Input ~ 0
-AN2_FIX
 Text GLabel 4700 5000 2    50   Input ~ 0
 R\W
-Text GLabel 3025 6975 1    50   Input ~ 0
-GTIA_NORM
-Wire Wire Line
-	3025 6975 3025 7275
-Text GLabel 12250 9150 0    50   Input ~ 0
-GTIA_NORM
 $Comp
 L Connector:DIN-5_180degree J2
 U 1 1 5E602A43
@@ -2047,64 +1756,6 @@ Text GLabel 14900 1950 2    50   Input ~ 0
 MONO
 Text GLabel 14900 2050 2    50   Input ~ 0
 COMPOSITE
-$Comp
-L Device:C C254
-U 1 1 5E67F0FE
-P 9450 10150
-F 0 "C254" H 9565 10196 50  0000 L CNN
-F 1 "100nF" H 9565 10105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9488 10000 50  0001 C CNN
-F 3 "~" H 9450 10150 50  0001 C CNN
-	1    9450 10150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C255
-U 1 1 5E67FBB0
-P 9800 10150
-F 0 "C255" H 9915 10196 50  0000 L CNN
-F 1 "100nF" H 9915 10105 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 9838 10000 50  0001 C CNN
-F 3 "~" H 9800 10150 50  0001 C CNN
-	1    9800 10150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9450 10000 9650 10000
-Wire Wire Line
-	9450 10300 9650 10300
-$Comp
-L power:GND #PWR0191
-U 1 1 5E69EF3F
-P 9650 10450
-F 0 "#PWR0191" H 9650 10200 50  0001 C CNN
-F 1 "GND" H 9775 10350 50  0000 C CNN
-F 2 "" H 9650 10450 50  0001 C CNN
-F 3 "" H 9650 10450 50  0001 C CNN
-	1    9650 10450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9650 10450 9650 10300
-Connection ~ 9650 10300
-Wire Wire Line
-	9650 10300 9800 10300
-$Comp
-L power:VCC #PWR0192
-U 1 1 5E6AEF8A
-P 9650 9850
-F 0 "#PWR0192" H 9650 9700 50  0001 C CNN
-F 1 "VCC" H 9667 10023 50  0000 C CNN
-F 2 "" H 9650 9850 50  0001 C CNN
-F 3 "" H 9650 9850 50  0001 C CNN
-	1    9650 9850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9650 9850 9650 10000
-Connection ~ 9650 10000
-Wire Wire Line
-	9650 10000 9800 10000
 $Comp
 L power:+5VA #PWR0156
 U 1 1 5E94BF97
@@ -2302,4 +1953,16 @@ Wire Wire Line
 Connection ~ 5825 2400
 Wire Wire Line
 	5825 2400 6450 2400
+Wire Wire Line
+	3025 6300 5100 6300
+Wire Wire Line
+	5100 6300 5100 5100
+Wire Wire Line
+	5100 5100 4700 5100
+Wire Wire Line
+	3025 6300 3025 7275
+Wire Wire Line
+	3650 9500 3650 9650
+Wire Wire Line
+	3650 10450 3650 10600
 $EndSCHEMATC

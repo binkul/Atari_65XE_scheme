@@ -303,28 +303,6 @@ D6
 Text GLabel 3200 3125 0    50   Input ~ 0
 D7
 $Comp
-L Device:C C8
-U 1 1 5E50CFC7
-P 9050 2300
-F 0 "C8" H 9165 2346 50  0000 L CNN
-F 1 "100nF" H 9165 2255 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 9088 2150 50  0001 C CNN
-F 3 "~" H 9050 2300 50  0001 C CNN
-	1    9050 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C9
-U 1 1 5E50DDC4
-P 9350 2300
-F 0 "C9" H 9465 2346 50  0000 L CNN
-F 1 "100nF" H 9465 2255 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 9388 2150 50  0001 C CNN
-F 3 "~" H 9350 2300 50  0001 C CNN
-	1    9350 2300
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C10
 U 1 1 5E50E34A
 P 9650 2300
@@ -357,45 +335,16 @@ F 3 "~" H 10250 2300 50  0001 C CNN
 	1    10250 2300
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C13
-U 1 1 5E5119BA
-P 10550 2300
-F 0 "C13" H 10665 2346 50  0000 L CNN
-F 1 "100nF" H 10665 2255 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 10588 2150 50  0001 C CNN
-F 3 "~" H 10550 2300 50  0001 C CNN
-	1    10550 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9050 2450 9350 2450
-Wire Wire Line
-	9350 2450 9650 2450
-Connection ~ 9350 2450
 Wire Wire Line
 	9950 2450 9650 2450
-Connection ~ 9650 2450
-Wire Wire Line
-	10550 2450 10250 2450
 Wire Wire Line
 	10250 2450 9950 2450
-Connection ~ 10250 2450
 Connection ~ 9950 2450
 Wire Wire Line
-	9050 2150 9350 2150
-Wire Wire Line
-	9350 2150 9650 2150
-Connection ~ 9350 2150
-Wire Wire Line
 	9950 2150 9650 2150
-Connection ~ 9650 2150
 Wire Wire Line
 	10250 2150 9950 2150
 Connection ~ 9950 2150
-Wire Wire Line
-	10550 2150 10250 2150
-Connection ~ 10250 2150
 $Comp
 L power:GND #PWR0125
 U 1 1 5E520A25
@@ -560,21 +509,4 @@ $EndComp
 Wire Wire Line
 	3500 4125 3500 4325
 Connection ~ 3500 4325
-$Comp
-L Device:C C14
-U 1 1 5E4F90CC
-P 10850 2300
-F 0 "C14" H 10965 2346 50  0000 L CNN
-F 1 "100nF" H 10965 2255 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 10888 2150 50  0001 C CNN
-F 3 "~" H 10850 2300 50  0001 C CNN
-	1    10850 2300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10550 2150 10850 2150
-Connection ~ 10550 2150
-Wire Wire Line
-	10550 2450 10850 2450
-Connection ~ 10550 2450
 $EndSCHEMATC
