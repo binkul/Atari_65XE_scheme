@@ -124,7 +124,7 @@ Connection ~ 2000 6875
 Wire Wire Line
 	2000 6875 2250 6875
 $Comp
-L Atari:SIMM_exp_GAL U120
+L Atari-130XE-rescue:SIMM_exp_GAL-Atari U120
 U 1 1 5F8607CE
 P 2225 3850
 F 0 "U120" H 2225 5215 50  0000 C CNN
@@ -275,9 +275,11 @@ Wire Wire Line
 	825  925  825  1050
 Connection ~ 825  1050
 $Comp
-L Atari:DRAM_1MB_4bit U121
+L Atari-130XE-rescue:DRAM_1MB_4bit-Atari U121
 U 1 1 5F87AE34
 P 8700 1875
+AR Path="/5F87AE34" Ref="U121"  Part="1" 
+AR Path="/5E53A007/5F87AE34" Ref="U121"  Part="1" 
 F 0 "U121" H 8700 2840 50  0000 C CNN
 F 1 "DRAM_1MB_4bit" H 8700 2749 50  0000 C CNN
 F 2 "Atari:SOJ-26" H 8700 2275 50  0001 C CNN
@@ -286,9 +288,11 @@ F 3 "" H 8700 1875 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Atari:DRAM_1MB_4bit U122
+L Atari-130XE-rescue:DRAM_1MB_4bit-Atari U122
 U 1 1 5F87D2A4
 P 8725 4275
+AR Path="/5F87D2A4" Ref="U122"  Part="1" 
+AR Path="/5E53A007/5F87D2A4" Ref="U122"  Part="1" 
 F 0 "U122" H 8725 5240 50  0000 C CNN
 F 1 "DRAM_1MB_4bit" H 8725 5149 50  0000 C CNN
 F 2 "Atari:SOJ-26" H 8725 4675 50  0001 C CNN
@@ -438,10 +442,6 @@ Text GLabel 8250 2075 0    50   Input ~ 0
 RA4
 Text GLabel 8250 2375 0    50   Input ~ 0
 RA7
-Text GLabel 8250 2475 0    50   Input ~ 0
-RA8
-Text GLabel 8250 2575 0    50   Input ~ 0
-RA9
 Text GLabel 8250 1375 0    50   Input ~ 0
 WRT
 Text GLabel 8275 3775 0    50   Input ~ 0
@@ -594,11 +594,25 @@ Wire Wire Line
 Wire Wire Line
 	7100 4550 7100 4875
 Wire Wire Line
-	7100 4875 8275 4875
+	7100 4875 7350 4875
 Wire Wire Line
 	6025 4850 6975 4850
 Wire Wire Line
 	6975 4850 6975 4975
 Wire Wire Line
-	6975 4975 8275 4975
+	6975 4975 7475 4975
+Wire Wire Line
+	8250 2475 7350 2475
+Wire Wire Line
+	7350 2475 7350 4875
+Connection ~ 7350 4875
+Wire Wire Line
+	7350 4875 8275 4875
+Wire Wire Line
+	8250 2575 7475 2575
+Wire Wire Line
+	7475 2575 7475 4975
+Connection ~ 7475 4975
+Wire Wire Line
+	7475 4975 8275 4975
 $EndSCHEMATC
