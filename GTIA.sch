@@ -14,19 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Atari-130XE-rescue:GTIA-Atari U3
-U 1 1 5E53E87B
-P 4100 4450
-AR Path="/5E53E87B" Ref="U3"  Part="1" 
-AR Path="/5E53E150/5E53E87B" Ref="U3"  Part="1" 
-F 0 "U3" H 4100 6115 50  0000 C CNN
-F 1 "GTIA" H 4100 6024 50  0000 C CNN
-F 2 "Package_DIP:DIP-40_W15.24mm_LongPads" H 4100 4450 50  0001 C CNN
-F 3 "" H 4100 4450 50  0001 C CNN
-	1    4100 4450
-	1    0    0    -1  
-$EndComp
 Text GLabel 3500 4550 0    50   Input ~ 0
 D0
 Text GLabel 3500 4650 0    50   Input ~ 0
@@ -1965,4 +1952,15 @@ Wire Wire Line
 	3650 9500 3650 9650
 Wire Wire Line
 	3650 10450 3650 10600
+$Comp
+L Atari:GTIA U3
+U 1 1 5F9F44AA
+P 4100 4450
+F 0 "U3" H 4100 6115 50  0000 C CNN
+F 1 "GTIA" H 4100 6024 50  0000 C CNN
+F 2 "Package_DIP:DIP-40_W15.24mm_LongPads" H 4100 4450 50  0001 C CNN
+F 3 "" H 4100 4450 50  0001 C CNN
+	1    4100 4450
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
