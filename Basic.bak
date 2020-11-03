@@ -590,11 +590,11 @@ Text GLabel 5150 2300 2    50   Input ~ 0
 A13_cart
 Text GLabel 7650 1500 2    50   Input ~ 0
 A12_sel
-Text GLabel 7650 1700 2    50   Input ~ 0
+Text GLabel 7650 2100 2    50   Input ~ 0
 A14_sel
 Text GLabel 7650 1900 2    50   Input ~ 0
 A15_sel
-Text GLabel 7650 2100 2    50   Input ~ 0
+Text GLabel 7650 1700 2    50   Input ~ 0
 A16_sel
 Text GLabel 7150 1500 0    50   Input ~ 0
 A12_cart

@@ -70,17 +70,6 @@ F 3 "~" H 2450 4950 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C42
-U 1 1 5E77A0C8
-P 4950 4250
-F 0 "C42" H 5065 4296 50  0000 L CNN
-F 1 "100n" H 5065 4205 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4988 4100 50  0001 C CNN
-F 3 "~" H 4950 4250 50  0001 C CNN
-	1    4950 4250
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:D D6
 U 1 1 5E782BB5
 P 2850 5250
@@ -103,7 +92,7 @@ F 3 "" H 3600 4700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3600 4500 3600 4700
+	3600 4500 3600 4575
 $Comp
 L power:VCC #PWR0230
 U 1 1 5E783B78
@@ -190,9 +179,22 @@ Wire Wire Line
 	3600 3400 4950 3400
 Wire Wire Line
 	4950 3400 4950 4100
+$Comp
+L Device:C C42
+U 1 1 5E77A0C8
+P 4950 4250
+F 0 "C42" H 5065 4296 50  0000 L CNN
+F 1 "100n" H 5065 4205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 4988 4100 50  0001 C CNN
+F 3 "~" H 4950 4250 50  0001 C CNN
+	1    4950 4250
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	4450 4950 4950 4950
+	3600 4575 4950 4575
 Wire Wire Line
-	4950 4950 4950 4400
-Connection ~ 4450 4950
+	4950 4575 4950 4400
+Connection ~ 3600 4575
+Wire Wire Line
+	3600 4575 3600 4700
 $EndSCHEMATC

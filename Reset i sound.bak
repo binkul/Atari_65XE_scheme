@@ -191,8 +191,16 @@ Wire Wire Line
 Wire Wire Line
 	4950 3400 4950 4100
 Wire Wire Line
-	4450 4950 4950 4950
-Wire Wire Line
 	4950 4950 4950 4400
-Connection ~ 4450 4950
+$Comp
+L power:GND #PWR?
+U 1 1 5FA1C8DA
+P 4950 4950
+F 0 "#PWR?" H 4950 4700 50  0001 C CNN
+F 1 "GND" H 4955 4777 50  0000 C CNN
+F 2 "" H 4950 4950 50  0001 C CNN
+F 3 "" H 4950 4950 50  0001 C CNN
+	1    4950 4950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
