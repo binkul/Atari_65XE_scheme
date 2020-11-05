@@ -703,10 +703,8 @@ Wire Wire Line
 	7625 6225 7875 6225
 Wire Wire Line
 	7450 6375 7875 6375
-Text GLabel 6225 6875 2    50   Input ~ 0
+Text GLabel 6175 6825 2    50   Input ~ 0
 LP
-Wire Wire Line
-	6125 6875 6225 6875
 NoConn ~ 4700 4600
 $Comp
 L Device:C C44
@@ -1841,53 +1839,11 @@ Wire Wire Line
 	14650 2050 14900 2050
 Wire Wire Line
 	14050 2050 13725 2050
-$Comp
-L 74xGxx:74AHC1G08 U113
-U 1 1 5F8309A6
-P 5875 6875
-F 0 "U113" H 5675 7050 50  0000 C CNN
-F 1 "74AHC1G08" H 5500 6725 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-23-5_HandSoldering" H 5875 6875 50  0001 C CNN
-F 3 "http://www.ti.com/lit/sg/scyt129e/scyt129e.pdf" H 5875 6875 50  0001 C CNN
-	1    5875 6875
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5500 6225 5500 6825
-Wire Wire Line
-	5500 6825 5575 6825
-Connection ~ 5500 6225
 Wire Wire Line
 	5375 6375 5375 6925
 Wire Wire Line
 	5375 6925 5575 6925
 Connection ~ 5375 6375
-$Comp
-L power:GND #PWR0105
-U 1 1 5F854381
-P 5875 7050
-F 0 "#PWR0105" H 5875 6800 50  0001 C CNN
-F 1 "GND" H 5880 6877 50  0000 C CNN
-F 2 "" H 5875 7050 50  0001 C CNN
-F 3 "" H 5875 7050 50  0001 C CNN
-	1    5875 7050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:VCC #PWR0111
-U 1 1 5F8546B5
-P 5875 6675
-F 0 "#PWR0111" H 5875 6525 50  0001 C CNN
-F 1 "VCC" H 5892 6848 50  0000 C CNN
-F 2 "" H 5875 6675 50  0001 C CNN
-F 3 "" H 5875 6675 50  0001 C CNN
-	1    5875 6675
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5875 7050 5875 6975
-Wire Wire Line
-	5875 6675 5875 6775
 $Comp
 L Device:C C107
 U 1 1 5F87A04E
@@ -1963,4 +1919,20 @@ F 3 "" H 4100 4450 50  0001 C CNN
 	1    4100 4450
 	1    0    0    -1  
 $EndComp
+$Comp
+L 74xx:74LS08 U10
+U 4 1 5FA87C92
+P 5875 6825
+F 0 "U10" H 5875 7150 50  0000 C CNN
+F 1 "74LS08" H 5875 7059 50  0000 C CNN
+F 2 "Package_DIP:DIP-14_W7.62mm_Socket_LongPads" H 5875 6825 50  0001 C CNN
+F 3 "http://www.ti.com/lit/gpn/sn74LS08" H 5875 6825 50  0001 C CNN
+	4    5875 6825
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 6225 5500 6725
+Wire Wire Line
+	5500 6725 5575 6725
+Connection ~ 5500 6225
 $EndSCHEMATC
