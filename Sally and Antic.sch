@@ -271,7 +271,7 @@ AR Path="/5E4F21CE" Ref="R?"  Part="1"
 AR Path="/5E4D7DB2/5E4F21CE" Ref="R4"  Part="1" 
 F 0 "R4" H 4620 3246 50  0000 L CNN
 F 1 "3k" H 4620 3155 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4480 3200 50  0001 C CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 4480 3200 50  0001 C CNN
 F 3 "~" H 4550 3200 50  0001 C CNN
 	1    4550 3200
 	1    0    0    -1  
@@ -284,7 +284,7 @@ AR Path="/5E4F21D4" Ref="R?"  Part="1"
 AR Path="/5E4D7DB2/5E4F21D4" Ref="R6"  Part="1" 
 F 0 "R6" H 4920 3246 50  0000 L CNN
 F 1 "3k" H 4920 3155 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 4780 3200 50  0001 C CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 4780 3200 50  0001 C CNN
 F 3 "~" H 4850 3200 50  0001 C CNN
 	1    4850 3200
 	1    0    0    -1  
@@ -297,7 +297,7 @@ AR Path="/5E4F21DA" Ref="R?"  Part="1"
 AR Path="/5E4D7DB2/5E4F21DA" Ref="R7"  Part="1" 
 F 0 "R7" H 5220 3246 50  0000 L CNN
 F 1 "3k" H 5220 3155 50  0000 L CNN
-F 2 "Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder" V 5080 3200 50  0001 C CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 5080 3200 50  0001 C CNN
 F 3 "~" H 5150 3200 50  0001 C CNN
 	1    5150 3200
 	1    0    0    -1  
