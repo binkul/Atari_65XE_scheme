@@ -588,18 +588,6 @@ Text GLabel 5150 1750 2    50   Input ~ 0
 A12_cart
 Text GLabel 5150 2300 2    50   Input ~ 0
 A13_cart
-Text GLabel 7650 1500 2    50   Input ~ 0
-A12_sel
-Text GLabel 7650 2100 2    50   Input ~ 0
-A14_sel
-Text GLabel 7650 1900 2    50   Input ~ 0
-A15_sel
-Text GLabel 7650 1700 2    50   Input ~ 0
-A16_sel
-Text GLabel 7150 1500 0    50   Input ~ 0
-A12_cart
-Text GLabel 7150 1400 0    50   Input ~ 0
-A12
 Wire Wire Line
 	4850 6475 3900 6475
 Wire Wire Line
@@ -614,81 +602,80 @@ Wire Wire Line
 Wire Wire Line
 	4550 3900 4550 3400
 Connection ~ 3250 3400
-$Comp
-L power:VCC #PWR0236
-U 1 1 5E98DD27
-P 6600 1400
-F 0 "#PWR0236" H 6600 1250 50  0001 C CNN
-F 1 "VCC" H 6617 1573 50  0000 C CNN
-F 2 "" H 6600 1400 50  0001 C CNN
-F 3 "" H 6600 1400 50  0001 C CNN
-	1    6600 1400
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0237
-U 1 1 5E991899
-P 6600 2200
-F 0 "#PWR0237" H 6600 1950 50  0001 C CNN
-F 1 "GND" H 6605 2027 50  0000 C CNN
-F 2 "" H 6600 2200 50  0001 C CNN
-F 3 "" H 6600 2200 50  0001 C CNN
-	1    6600 2200
-	1    0    0    -1  
-$EndComp
 Text GLabel 9200 3550 0    50   Input ~ 0
 BASC_cart
 Text GLabel 9300 2750 0    50   Input ~ 0
 A13_cart
 $Comp
-L Connector_Generic:Conn_02x08_Odd_Even J52
-U 1 1 5FA02BA7
-P 7350 1700
-F 0 "J52" H 7400 2217 50  0000 C CNN
-F 1 "Conn_02x08_Odd_Even" H 7400 2126 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x08_P2.54mm_Vertical" H 7350 1700 50  0001 C CNN
-F 3 "~" H 7350 1700 50  0001 C CNN
-	1    7350 1700
+L Connector_Generic:Conn_01x04 J8
+U 1 1 5FB8A2D8
+P 7650 2050
+F 0 "J8" H 7568 1625 50  0000 C CNN
+F 1 "Basic_Sel" H 7568 1716 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 7650 2050 50  0001 C CNN
+F 3 "~" H 7650 2050 50  0001 C CNN
+	1    7650 2050
+	-1   0    0    1   
+$EndComp
+Text GLabel 7200 1850 2    50   Input ~ 0
+A12_sel
+Text GLabel 7200 1950 2    50   Input ~ 0
+A16_sel
+Text GLabel 7200 2050 2    50   Input ~ 0
+A15_sel
+Text GLabel 7200 2150 2    50   Input ~ 0
+A14_sel
+$Comp
+L power:GND #PWR0121
+U 1 1 5FBA1D89
+P 6700 2250
+F 0 "#PWR0121" H 6700 2000 50  0001 C CNN
+F 1 "GND" H 6705 2077 50  0000 C CNN
+F 2 "" H 6700 2250 50  0001 C CNN
+F 3 "" H 6700 2250 50  0001 C CNN
+	1    6700 2250
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7650 1400 7650 1500
+	7850 2050 7850 1950
+$Comp
+L power:VCC #PWR0122
+U 1 1 5FBAEFC3
+P 7850 1575
+F 0 "#PWR0122" H 7850 1425 50  0001 C CNN
+F 1 "VCC" H 7867 1748 50  0000 C CNN
+F 2 "" H 7850 1575 50  0001 C CNN
+F 3 "" H 7850 1575 50  0001 C CNN
+	1    7850 1575
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_02x04_Odd_Even J9
+U 1 1 5FBB4F06
+P 6900 1950
+F 0 "J9" H 6950 2267 50  0000 C CNN
+F 1 "Basic_Sel" H 6950 2176 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 6900 1950 50  0001 C CNN
+F 3 "~" H 6900 1950 50  0001 C CNN
+	1    6900 1950
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	7650 1600 7650 1700
+	6700 2150 6700 2250
 Wire Wire Line
-	7650 1800 7650 1900
+	6700 1950 6700 2050
 Wire Wire Line
-	7650 2000 7650 2100
+	6700 2050 6700 2150
+Connection ~ 6700 2050
+Connection ~ 6700 2150
+Text GLabel 7850 2150 2    50   Input ~ 0
+A12
+Text GLabel 6700 1850 0    50   Input ~ 0
+A12_cart
 Wire Wire Line
-	7150 1600 7050 1600
+	7850 1850 7850 1575
 Wire Wire Line
-	7050 1600 7050 1800
-Wire Wire Line
-	7050 2000 7150 2000
-Wire Wire Line
-	7150 1800 7050 1800
-Connection ~ 7050 1800
-Wire Wire Line
-	7050 1800 7050 2000
-Wire Wire Line
-	7150 1700 7100 1700
-Wire Wire Line
-	7100 1700 7100 1900
-Wire Wire Line
-	7100 2100 7150 2100
-Wire Wire Line
-	7100 1900 7150 1900
-Connection ~ 7100 1900
-Wire Wire Line
-	7100 1900 7100 2100
-Wire Wire Line
-	6600 1400 6600 1600
-Wire Wire Line
-	6600 1600 7050 1600
-Connection ~ 7050 1600
-Wire Wire Line
-	7100 2100 6600 2100
-Wire Wire Line
-	6600 2100 6600 2200
-Connection ~ 7100 2100
+	7850 1950 7850 1850
+Connection ~ 7850 1950
+Connection ~ 7850 1850
 $EndSCHEMATC

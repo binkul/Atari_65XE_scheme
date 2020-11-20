@@ -15,17 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Memory_EPROM:27C512 U7
-U 1 1 5E64FA8C
-P 5850 3550
-F 0 "U7" H 5600 4600 50  0000 C CNN
-F 1 "27C512" H 6050 4600 50  0000 C CNN
-F 2 "Package_DIP:DIP-28_W15.24mm_LongPads" H 5850 3550 50  0001 C CNN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/doc0015.pdf" H 5850 3550 50  0001 C CNN
-	1    5850 3550
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VCC #PWR0185
 U 1 1 5E650CBD
 P 5850 2300
@@ -41,16 +30,14 @@ Wire Wire Line
 $Comp
 L power:GND #PWR0186
 U 1 1 5E6514FE
-P 5850 4800
-F 0 "#PWR0186" H 5850 4550 50  0001 C CNN
-F 1 "GND" H 5855 4627 50  0000 C CNN
-F 2 "" H 5850 4800 50  0001 C CNN
-F 3 "" H 5850 4800 50  0001 C CNN
-	1    5850 4800
+P 5850 5175
+F 0 "#PWR0186" H 5850 4925 50  0001 C CNN
+F 1 "GND" H 5855 5002 50  0000 C CNN
+F 2 "" H 5850 5175 50  0001 C CNN
+F 3 "" H 5850 5175 50  0001 C CNN
+	1    5850 5175
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	5850 4650 5850 4800
 Text GLabel 6250 2650 2    50   Input ~ 0
 D0
 Text GLabel 6250 2750 2    50   Input ~ 0
@@ -96,77 +83,29 @@ A12
 Text GLabel 5450 3950 0    50   Input ~ 0
 A13
 $Comp
-L Connector_Generic:Conn_02x03_Odd_Even J51
-U 1 1 5E656178
-P 3950 4050
-F 0 "J51" H 4000 4367 50  0000 C CNN
-F 1 "OS Type" H 4000 4276 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 3950 4050 50  0001 C CNN
-F 3 "~" H 3950 4050 50  0001 C CNN
-	1    3950 4050
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR0187
 U 1 1 5E6585C8
-P 4000 4300
-F 0 "#PWR0187" H 4000 4050 50  0001 C CNN
-F 1 "GND" H 4005 4127 50  0000 C CNN
-F 2 "" H 4000 4300 50  0001 C CNN
-F 3 "" H 4000 4300 50  0001 C CNN
-	1    4000 4300
+P 2625 4550
+F 0 "#PWR0187" H 2625 4300 50  0001 C CNN
+F 1 "GND" H 2630 4377 50  0000 C CNN
+F 2 "" H 2625 4550 50  0001 C CNN
+F 3 "" H 2625 4550 50  0001 C CNN
+	1    2625 4550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	3750 4150 3750 4300
-Wire Wire Line
-	3750 4300 4000 4300
-Wire Wire Line
-	4250 4150 4250 4300
-Wire Wire Line
-	4250 4300 4000 4300
-Connection ~ 4000 4300
-Wire Wire Line
-	3750 3950 3750 3600
-Wire Wire Line
-	3750 3600 4000 3600
-Wire Wire Line
-	4250 3600 4250 3950
 $Comp
 L power:VCC #PWR0188
 U 1 1 5E659359
-P 4000 3450
-F 0 "#PWR0188" H 4000 3300 50  0001 C CNN
-F 1 "VCC" H 4017 3623 50  0000 C CNN
-F 2 "" H 4000 3450 50  0001 C CNN
-F 3 "" H 4000 3450 50  0001 C CNN
-	1    4000 3450
+P 3875 3575
+F 0 "#PWR0188" H 3875 3425 50  0001 C CNN
+F 1 "VCC" H 3892 3748 50  0000 C CNN
+F 2 "" H 3875 3575 50  0001 C CNN
+F 3 "" H 3875 3575 50  0001 C CNN
+	1    3875 3575
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4000 3450 4000 3600
-Connection ~ 4000 3600
-Wire Wire Line
-	4000 3600 4250 3600
-Wire Wire Line
-	5450 4050 4250 4050
-Wire Wire Line
-	5450 4150 4400 4150
-Wire Wire Line
-	4400 4150 4400 4650
-Wire Wire Line
-	4400 4650 3500 4650
-Wire Wire Line
-	3500 4650 3500 4050
-Wire Wire Line
-	3500 4050 3750 4050
-Wire Wire Line
-	5450 4350 5450 4450
-Text GLabel 5300 4450 0    50   Input ~ 0
+Text GLabel 5325 4850 0    50   Input ~ 0
 OS
-Wire Wire Line
-	5450 4450 5300 4450
-Connection ~ 5450 4450
 $Comp
 L Device:C C253
 U 1 1 5E65EF44
@@ -204,4 +143,113 @@ F 3 "" H 7200 3900 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	7200 3900 7200 4150
+$Comp
+L Memory_EPROM:27C040 U7
+U 1 1 5FC01AF4
+P 5850 3750
+F 0 "U7" H 5600 5000 50  0000 C CNN
+F 1 "27C040" H 6025 5000 50  0000 C CNN
+F 2 "Package_DIP:DIP-32_W15.24mm_Socket_LongPads" H 5850 3750 50  0001 C CNN
+F 3 "http://ww1.microchip.com/downloads/en/devicedoc/doc0189.pdf" H 5850 3750 50  0001 C CNN
+	1    5850 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4750 5450 4850
+Wire Wire Line
+	5450 4850 5325 4850
+Connection ~ 5450 4850
+Wire Wire Line
+	5850 5050 5850 5175
+$Comp
+L Connector_Generic:Conn_02x06_Odd_Even J10
+U 1 1 5FC22FF9
+P 2825 4050
+F 0 "J10" H 2875 4467 50  0000 C CNN
+F 1 "Os Type" H 2875 4376 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical" H 2825 4050 50  0001 C CNN
+F 3 "~" H 2825 4050 50  0001 C CNN
+	1    2825 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x06 J11
+U 1 1 5FC26BAD
+P 3675 4150
+F 0 "J11" H 3593 3625 50  0000 C CNN
+F 1 "Os Type" H 3593 3716 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 3675 4150 50  0001 C CNN
+F 3 "~" H 3675 4150 50  0001 C CNN
+	1    3675 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2625 3850 2625 3950
+Wire Wire Line
+	2625 3950 2625 4050
+Connection ~ 2625 3950
+Wire Wire Line
+	2625 4050 2625 4150
+Connection ~ 2625 4050
+Wire Wire Line
+	2625 4150 2625 4250
+Connection ~ 2625 4150
+Wire Wire Line
+	2625 4250 2625 4350
+Connection ~ 2625 4250
+Wire Wire Line
+	2625 4350 2625 4550
+Connection ~ 2625 4350
+Wire Wire Line
+	3875 3850 3875 3950
+Wire Wire Line
+	3875 4050 3875 3950
+Connection ~ 3875 3950
+Wire Wire Line
+	3875 4150 3875 4050
+Connection ~ 3875 4050
+Connection ~ 3875 4150
+Wire Wire Line
+	3875 4150 3875 4250
+Wire Wire Line
+	3875 4350 3875 4250
+Connection ~ 3875 4250
+Wire Wire Line
+	3875 3850 3875 3575
+Connection ~ 3875 3850
+Text GLabel 5450 4050 0    50   Input ~ 0
+OSA14
+Text GLabel 5450 4150 0    50   Input ~ 0
+OSA15
+Text GLabel 5450 4250 0    50   Input ~ 0
+OSA16
+Text GLabel 5450 4650 0    50   Input ~ 0
+OSA18
+Text GLabel 5450 4350 0    50   Input ~ 0
+OSA17
+$Comp
+L power:VCC #PWR0123
+U 1 1 5FC31A59
+P 4875 4350
+F 0 "#PWR0123" H 4875 4200 50  0001 C CNN
+F 1 "VCC" H 4892 4523 50  0000 C CNN
+F 2 "" H 4875 4350 50  0001 C CNN
+F 3 "" H 4875 4350 50  0001 C CNN
+	1    4875 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 4450 4875 4450
+Wire Wire Line
+	4875 4450 4875 4350
+Text GLabel 3125 3850 2    50   Input ~ 0
+OSA14
+Text GLabel 3125 3950 2    50   Input ~ 0
+OSA15
+Text GLabel 3125 4050 2    50   Input ~ 0
+OSA16
+Text GLabel 3125 4150 2    50   Input ~ 0
+OSA17
+Text GLabel 3125 4250 2    50   Input ~ 0
+OSA18
 $EndSCHEMATC
