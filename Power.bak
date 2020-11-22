@@ -103,11 +103,11 @@ $EndComp
 Wire Wire Line
 	7000 3450 7000 3600
 Wire Wire Line
-	5000 3450 5400 3450
+	5000 3450 5025 3450
 Wire Wire Line
 	7000 4000 7000 3900
 Wire Wire Line
-	3250 4000 5400 4000
+	3250 4000 5025 4000
 Wire Wire Line
 	6500 3600 6500 3450
 Wire Wire Line
@@ -276,4 +276,45 @@ F 3 "~" H 5750 6600 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5750 6250 5750 6600
+$Comp
+L Device:C C106
+U 1 1 5FCD76C3
+P 5025 3750
+F 0 "C106" H 5140 3796 50  0000 L CNN
+F 1 "1nF" H 5140 3705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 5063 3600 50  0001 C CNN
+F 3 "~" H 5025 3750 50  0001 C CNN
+	1    5025 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5025 3600 5025 3450
+Connection ~ 5025 3450
+Wire Wire Line
+	5025 3450 5400 3450
+Wire Wire Line
+	5025 3900 5025 4000
+Connection ~ 5025 4000
+Wire Wire Line
+	5025 4000 5400 4000
+$Comp
+L Device:C C107
+U 1 1 5FCD8B12
+P 7525 3750
+F 0 "C107" H 7640 3796 50  0000 L CNN
+F 1 "1nF" H 7640 3705 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 7563 3600 50  0001 C CNN
+F 3 "~" H 7525 3750 50  0001 C CNN
+	1    7525 3750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 3450 7525 3450
+Wire Wire Line
+	7525 3450 7525 3600
+Wire Wire Line
+	7000 4000 7525 4000
+Wire Wire Line
+	7525 4000 7525 3900
+Connection ~ 7000 4000
 $EndSCHEMATC

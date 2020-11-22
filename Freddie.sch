@@ -134,7 +134,7 @@ U 1 1 5E52435F
 P 2350 1250
 F 0 "R16" V 2143 1250 50  0000 C CNN
 F 1 "240" V 2234 1250 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2280 1250 50  0001 C CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 2280 1250 50  0001 C CNN
 F 3 "~" H 2350 1250 50  0001 C CNN
 	1    2350 1250
 	0    1    1    0   
@@ -145,7 +145,7 @@ U 1 1 5E524F65
 P 2350 2000
 F 0 "R17" V 2143 2000 50  0000 C CNN
 F 1 "1M" V 2234 2000 50  0000 C CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 2280 2000 50  0001 C CNN
+F 2 "Atari:R_Axial_DIN0207_L3.6mm_D2.2mm_P10.16mm_Horizontal" V 2280 2000 50  0001 C CNN
 F 3 "~" H 2350 2000 50  0001 C CNN
 	1    2350 2000
 	0    1    1    0   
@@ -788,4 +788,89 @@ Wire Wire Line
 Wire Wire Line
 	9500 1800 9550 1800
 Connection ~ 9500 1700
+$Comp
+L Connector_Generic:Conn_01x06 J14
+U 1 1 5FC9F389
+P 3125 4725
+F 0 "J14" H 3205 4717 50  0000 L CNN
+F 1 "Conn_01x06" H 3205 4626 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical" H 3125 4725 50  0001 C CNN
+F 3 "~" H 3125 4725 50  0001 C CNN
+	1    3125 4725
+	1    0    0    -1  
+$EndComp
+Text GLabel 2925 4525 0    50   Input ~ 0
+R\W
+Text GLabel 2925 4625 0    50   Input ~ 0
+OSC
+Text GLabel 2925 4825 0    50   Input ~ 0
+CAS
+Text GLabel 2925 4925 0    50   Input ~ 0
+WRT
+Text GLabel 2925 5025 0    50   Input ~ 0
+RAS
+$Comp
+L power:GND #PWR0128
+U 1 1 5FCA0518
+P 2550 5725
+F 0 "#PWR0128" H 2550 5475 50  0001 C CNN
+F 1 "GND" H 2555 5552 50  0000 C CNN
+F 2 "" H 2550 5725 50  0001 C CNN
+F 3 "" H 2550 5725 50  0001 C CNN
+	1    2550 5725
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2925 4725 2550 4725
+$Comp
+L Connector_Generic:Conn_01x05 J16
+U 1 1 5FCAEA58
+P 3125 4125
+F 0 "J16" H 3205 4167 50  0000 L CNN
+F 1 "Conn_01x05" H 3205 4076 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 3125 4125 50  0001 C CNN
+F 3 "~" H 3125 4125 50  0001 C CNN
+	1    3125 4125
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2650 2200 2650 3925
+Wire Wire Line
+	2650 3925 2925 3925
+Connection ~ 2650 2200
+Text GLabel 2925 4025 0    50   Input ~ 0
+EXTSEL
+Text GLabel 2925 4125 0    50   Input ~ 0
+CASINH
+Text GLabel 2925 4225 0    50   Input ~ 0
+O2
+Wire Wire Line
+	2925 4325 2550 4325
+Wire Wire Line
+	2550 4325 2550 4725
+Connection ~ 2550 4725
+$Comp
+L Connector_Generic:Conn_01x04 J17
+U 1 1 5FCBC25F
+P 3125 5400
+F 0 "J17" H 3205 5392 50  0000 L CNN
+F 1 "Conn_01x04" H 3205 5301 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3125 5400 50  0001 C CNN
+F 3 "~" H 3125 5400 50  0001 C CNN
+	1    3125 5400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2550 4725 2550 5300
+Text GLabel 2925 5400 0    50   Input ~ 0
+O0
+Text GLabel 2925 5600 0    50   Input ~ 0
+BO2
+Text GLabel 2925 5500 0    50   Input ~ 0
+O2
+Wire Wire Line
+	2925 5300 2550 5300
+Connection ~ 2550 5300
+Wire Wire Line
+	2550 5300 2550 5725
 $EndSCHEMATC

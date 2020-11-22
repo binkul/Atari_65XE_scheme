@@ -563,7 +563,7 @@ U 1 1 5E7453B1
 P 8400 2450
 F 0 "Q4" H 8590 2496 50  0000 L CNN
 F 1 "2N3906" H 8590 2405 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-92" H 8600 2375 50  0001 L CIN
+F 2 "Package_TO_SOT_THT:TO-92_Inline" H 8600 2375 50  0001 L CIN
 F 3 "https://www.fairchildsemi.com/datasheets/2N/2N3906.pdf" H 8400 2450 50  0001 L CNN
 	1    8400 2450
 	1    0    0    -1  

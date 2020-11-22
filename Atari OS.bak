@@ -223,25 +223,10 @@ Text GLabel 5450 4150 0    50   Input ~ 0
 OSA15
 Text GLabel 5450 4250 0    50   Input ~ 0
 OSA16
-Text GLabel 5450 4650 0    50   Input ~ 0
+Text GLabel 5450 4450 0    50   Input ~ 0
 OSA18
 Text GLabel 5450 4350 0    50   Input ~ 0
 OSA17
-$Comp
-L power:VCC #PWR0123
-U 1 1 5FC31A59
-P 4875 4350
-F 0 "#PWR0123" H 4875 4200 50  0001 C CNN
-F 1 "VCC" H 4892 4523 50  0000 C CNN
-F 2 "" H 4875 4350 50  0001 C CNN
-F 3 "" H 4875 4350 50  0001 C CNN
-	1    4875 4350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5450 4450 4875 4450
-Wire Wire Line
-	4875 4450 4875 4350
 Text GLabel 3125 3850 2    50   Input ~ 0
 OSA14
 Text GLabel 3125 3950 2    50   Input ~ 0
@@ -252,4 +237,8 @@ Text GLabel 3125 4150 2    50   Input ~ 0
 OSA17
 Text GLabel 3125 4250 2    50   Input ~ 0
 OSA18
+Text GLabel 5450 4650 0    50   Input ~ 0
+OSA19
+Text GLabel 3125 4350 2    50   Input ~ 0
+OSA19
 $EndSCHEMATC

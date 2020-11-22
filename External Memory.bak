@@ -615,4 +615,21 @@ Wire Wire Line
 Connection ~ 7475 4975
 Wire Wire Line
 	7475 4975 8275 4975
+$Comp
+L Device:CP C98
+U 1 1 5FC57288
+P 3150 7025
+F 0 "C98" H 3268 7071 50  0000 L CNN
+F 1 "100uF" H 3268 6980 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 3188 6875 50  0001 C CNN
+F 3 "~" H 3150 7025 50  0001 C CNN
+	1    3150 7025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3150 6875 2700 6875
+Connection ~ 2700 6875
+Wire Wire Line
+	3150 7175 2700 7175
+Connection ~ 2700 7175
 $EndSCHEMATC
