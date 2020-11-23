@@ -619,11 +619,11 @@ F 3 "~" H 7650 2050 50  0001 C CNN
 $EndComp
 Text GLabel 7200 1850 2    50   Input ~ 0
 A12_sel
-Text GLabel 7200 1950 2    50   Input ~ 0
+Text GLabel 7200 2150 2    50   Input ~ 0
 A16_sel
 Text GLabel 7200 2050 2    50   Input ~ 0
 A15_sel
-Text GLabel 7200 2150 2    50   Input ~ 0
+Text GLabel 7200 1950 2    50   Input ~ 0
 A14_sel
 $Comp
 L power:GND #PWR0121
